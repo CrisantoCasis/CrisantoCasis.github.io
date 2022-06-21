@@ -1,7 +1,7 @@
 :root {
   --main-white: #f0f0f0;
-  --main-dark yellow: #8B8000;
-  --main-black: #000000;
+  --main-red: #26606e;
+  --main-blue: #264348;
   --main-gray: #696969;
 }
 
@@ -14,6 +14,12 @@
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
 }
 
 html {
@@ -111,25 +117,25 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-gray);
+  background: #5893ad;
 }
 
 .welcome-section {
   display: flex;
+  font-weight: 200;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #f0f0f0;
-  background-image: linear-gradient(2deg, #3a3d40 0%, #696969 0%);
+  background-color: #5893ad;
 }
 
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-black);
+  color: #f0f0f0;
 }
 
 .projects-section {
